@@ -1,12 +1,14 @@
 package tn.esprit.skiproject.Entities;
 
 import lombok.*;
+import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.util.Date;
 @Entity
 /* @Data Getter/Setter/Required_Args/Equals&HashCode/ToString */
 /* @RequiredArgsConstructor add @NonNull to selected attributes */
+/* @FieldDefaults(level = AccessLevel.PRIVATE) */
 @Getter
 @Setter
 @AllArgsConstructor
