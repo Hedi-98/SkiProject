@@ -33,4 +33,9 @@ public class SkieurController {
         skieurSer.removeSkieur(skieur);
     }
 
+    @PutMapping ("/{numSkieur}/{numPiste}")
+    public Skieur affSkieur(@PathVariable Long numSkieur,@PathVariable Long numPiste){
+        return skieurSer.assignSkierToPiste(numSkieur,numPiste);
+    }
+
 }

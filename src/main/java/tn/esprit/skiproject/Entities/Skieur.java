@@ -21,7 +21,7 @@ public class Skieur {
     @Temporal(TemporalType.DATE)
     private Date dateNaissance;
     private String ville;
-    @ManyToMany
+    @ManyToMany(mappedBy = "skieurs")
     private Set<Piste> pistes;
     @OneToMany(mappedBy = "skieur")
     private Set<Inscription> inscriptions;

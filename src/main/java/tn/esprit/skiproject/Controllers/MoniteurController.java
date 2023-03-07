@@ -31,4 +31,8 @@ public class MoniteurController {
     public void delMoniteur(@RequestBody Moniteur moniteur){
         moniteurSer.removeMoniteur(moniteur);
     }
+    @PutMapping  ("/add/{numCours}")
+    public Moniteur affMoniteur(@RequestBody Moniteur moniteur,@PathVariable Long numCours){
+        return moniteurSer.addInstructorAndAssignToCourse(moniteur,numCours);
+    }
 }
