@@ -4,4 +4,5 @@ package tn.esprit.skiproject.Entities;
 public class Test {
     private int numdzzzz;
     private String nom;
+    private String test2;
 }
