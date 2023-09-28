@@ -7,5 +7,14 @@ pipeline {
                 checkout scm
             }
         }
+        stage('Affichage de la date système') {
+            steps {
+                // Afficher la date système
+                script {
+                    def date = sh(script: 'date', returnStatus: true)
+                    echo "La date système est : ${date}"
+                }
+            }
+        }
     }
 }
